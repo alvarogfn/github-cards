@@ -1,0 +1,56 @@
+.form {
+  flex-grow: 1;
+
+  padding: 5px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+
+  border-radius: 5px;
+}
+
+.label {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 10px;
+}
+
+.input {
+  flex-grow: 1;
+  height: 100%;
+
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.icon {
+  fill: #118cd9;
+}
+
+.search {
+  color: #fff;
+
+  flex-basis: 100px;
+  font-weight: 900;
+
+  background-color: #0079fe;
+
+  border-radius: 7px;
+
+  padding: 8px;
+
+  cursor: pointer;
+
+  transition: 200ms;
+
+  &:hover {
+    background-color: darken($color: #0079fe, $amount: 10%);
+  }
+}

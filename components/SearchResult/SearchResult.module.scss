@@ -1,0 +1,73 @@
+@keyframes grow {
+  0% {
+    max-height: 1px;
+  }
+  100% {
+    max-height: 500px;
+  }
+}
+
+.container {
+  position: absolute;
+
+  top: 75px;
+  width: 100%;
+
+  z-index: 1;
+
+  background-color: #1f2a48;
+  box-shadow: 0 0 5px darken($color: #1f2a48, $amount: 10%);
+  border-radius: 7px;
+
+  flex-grow: 1;
+
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 5px;
+
+  padding: 10px;
+
+  animation: grow 800ms ease-in-out forwards;
+
+  overflow: hidden;
+}
+
+.close {
+  align-self: flex-end;
+
+  background-color: #121b26;
+  background-image: url("../../public/close.svg");
+  background-position: center center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+
+  width: 30px;
+  height: 30px;
+
+  font-size: 1.3rem;
+
+  font-weight: 900;
+
+  border-radius: 5px;
+
+  text-indent: -99999px;
+
+  transition: 200ms;
+
+  &:hover {
+    scale: 1.2;
+  }
+}
+
+.loading {
+  align-self: center;
+  justify-self: center;
+}
+
+.list {
+  padding: 5px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 10px;
+}

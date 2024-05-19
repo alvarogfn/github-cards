@@ -1,0 +1,47 @@
+:root {
+  font-size: 13px;
+  @media screen and (min-width: 700px) {
+    font-size: 16px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+body {
+  background-color: #141c2f;
+  color: #ffffff;
+  font-family: "Space Mono", monospace;
+}
+
+input,
+button {
+  background-color: inherit;
+  font-family: inherit;
+  border: initial;
+  outline: initial;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: initial;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}

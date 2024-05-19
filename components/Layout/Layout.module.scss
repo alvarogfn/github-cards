@@ -1,0 +1,15 @@
+.container {
+  margin: 20px auto;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 5px;
+  width: calc(100vw - 30px);
+  max-width: 600px;
+}
+
+.header,
+.content {
+  background-color: #1f2a48;
+
+  border-radius: 10px;
+}

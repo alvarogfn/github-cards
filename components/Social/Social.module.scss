@@ -1,0 +1,19 @@
+.list {
+  padding: 10px 0;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  row-gap: 7.5px;
+}
+
+.item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.empty {
+  filter: brightness(40%);
+}

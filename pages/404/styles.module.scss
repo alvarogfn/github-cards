@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.subtitle {
+  font-weight: 400;
+}
+
+.return {
+  background-color: #0079fe;
+  font-weight: 900;
+
+  padding: 10px 30px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 200ms;
+
+  &:hover {
+    filter: brightness(90%);
+  }
+}

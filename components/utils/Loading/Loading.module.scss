@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.loading {
+  background-color: #0079fe;
+
+  height: 30px;
+  width: 30px;
+
+  animation: loading 750ms ease-in-out alternate infinite;
+}
+
+.phrase {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "...";
+
+    animation: typewriter 1s linear infinite;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(40px);
+  }
+
+  100% {
+    transform: translateX(-40px);
+  }
+}
+
+@keyframes typewriter {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}
